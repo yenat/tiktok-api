@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "src": "/verification.txt",
+      "headers": {
+        "Content-Type": "text/plain",
+        "Cache-Control": "public, max-age=3600"
+      }
+    },
+    {
+      "src": "/verification.txt/",
+      "status": 301,
+      "headers": {
+        "Location": "/verification.txt"
+      }
+    }
+  ]
+}
